@@ -1,0 +1,13 @@
+{
+  "port":8090,
+  "mode":"127.0.0.1",
+  "api":[
+    {
+      "path":"/sendMessage",
+      "handler":"com.misa.chatting.handler.actionsImp.SendMessageHandler",
+      "isPublic":true,
+      "roles":[],
+      "method":"POST"
+    }
+  ]
+}

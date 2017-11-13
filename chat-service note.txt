@@ -1,0 +1,16 @@
+FILTER SECURITY: //- nickname: n
+	         - accessToken: at
+alt + 1: close and open project view
+
+ommessage: - read attribute and actions from client
+	   - invoke method?
+           - This method level annotation can be used to make a Java method 
+receive incoming web socket messages. 
+	   - khi mot websocket nhan duoc du lieu tu server thi onmessage dc goi	
+	   
+onopen: add session- be called when a new websocket session created
+onclose: remove session
+
+sendMessageHandler - get senderID/ get message/ get receiverID
+		 - create a chat group : link/ add in database
+		 - 
