@@ -1,6 +1,5 @@
 package com.misa.chatting.test.sendMessage;
 
-import com.misa.chatting.websocket_config.Client_EndPoint;
 import org.glassfish.tyrus.client.ClientManager;
 
 

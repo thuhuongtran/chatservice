@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/chatservice.iml" filepath="$PROJECT_DIR$/chatservice.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/hascode-vertx-websocket-chat-a179ef2b5de0/vertx-websocket-chat.iml" filepath="$USER_HOME$/Downloads/hascode-vertx-websocket-chat-a179ef2b5de0/vertx-websocket-chat.iml" />
     </modules>
   </component>
 </project>

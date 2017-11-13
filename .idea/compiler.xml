@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="chatservice" />
+        <module name="vertx-websocket-chat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="chatservice" target="1.8" />
+      <module name="vertx-websocket-chat" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
