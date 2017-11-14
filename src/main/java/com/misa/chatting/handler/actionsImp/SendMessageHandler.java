@@ -12,6 +12,7 @@ import com.misa.chatting.service.hazelcast_data_manage.PutData;
 import com.misa.chatting.service.serviceImp.UserDataServiceImp;
 import com.misa.chatting.utils.Authentication;
 import com.misa.chatting.utils.ChatUtils;
+import com.misa.chatting.websocket_config.ChatSocket;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
@@ -36,7 +37,7 @@ public class SendMessageHandler extends BaseApiAction {
     @Override
     public BaseResponse handler(String bodyReq) throws Exception {
         // get info from string body
-        SendMessage sendMessage = ChatUtils.jsonToSendMessage(bodyReq); // not confirm
+        SendMessage sendMessage = ChatUtils.jsonToSendMessage(bodyReq); // not confirm -  wrong have to change to message obj
         UserRequest userReq = authen.checkToken(sendMessage.getSenderToken()); // check sender token - security
         // check filter security - return UserID
         if(userReq.getStatus()== ErrorCode.ACTIVE_TOKEN
@@ -44,7 +45,7 @@ public class SendMessageHandler extends BaseApiAction {
             // get userData from user service then push to hazelcast
             long user_id = userReq.getUser_id();
             PutData.putUserDataToHazel(userDataService.getUserRequestFromID(userReq, user_id));
-
+            ChatSocket.start()
         }
         else if(userReq.getStatus()==ErrorCode.INVALID_TOKEN){
 

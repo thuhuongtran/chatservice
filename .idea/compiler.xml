@@ -6,12 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chatservice" />
+        <module name="misa" />
         <module name="vertx-websocket-chat" />
+      </profile>
+      <profile name="Annotation profile for vertx-sockjs-example" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codetrans.config" value="C:\Users\thuhuong\Downloads\vertx-sockjs-example-master/codetrans-config.json" />
+        <option name="codetrans.output" value="C:\Users\thuhuong\Downloads\vertx-sockjs-example-master/src/main" />
+        <module name="vertx-sockjs-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="chatservice" target="1.8" />
+      <module name="misa" target="1.8" />
+      <module name="vertx-sockjs-example" target="1.8" />
       <module name="vertx-websocket-chat" target="1.7" />
     </bytecodeTargetLevel>
   </component>
