@@ -54,9 +54,11 @@ public class VertxHttpServer extends AbstractVerticle implements Handler<HttpSer
 		return SockJSHandler.create(vertx).bridge(options, event ->{
 			if(event.type()== BridgeEventType.SOCKET_CREATED){
 				logger.info("A socket was created");
+				System.out.println("A socket was created");
 			}
 			else if(event.type()==BridgeEventType.SOCKET_CLOSED){
 				logger.info("Socket was closed");
+				System.out.println("Socket was closed");
 			}
 			else{
 				logger.info("Can not open a socket.");
@@ -65,30 +67,7 @@ public class VertxHttpServer extends AbstractVerticle implements Handler<HttpSer
 		});
 
 	}
-	/*
-	* create inboundPermitted when accessing eventBus
-	* */
-	private JsonArray getInboundPermitted(){
-		JsonArray jsonArr= new JsonArray();
-		JsonObject inboundPermitted = new JsonObject();
-		inboundPermitted.put("address", "chat");
-		// anything else, put it here
 
-		jsonArr.add(inboundPermitted);
-		return jsonArr;
-	}
-	/*
-	* create outboundPermitted when accessing eventBus
-	* */
-	private JsonArray getOutboundPermitted(){
-		JsonArray jsonArr= new JsonArray();
-		JsonObject outboundPermitted = new JsonObject();
-		outboundPermitted.put("address", "chat");
-		// anything else, put it here
-
-		jsonArr.add(outboundPermitted);
-		return jsonArr;
-	}
 	@Override
 	public void handle(HttpServerRequest request) {
 		BaseResponse response = null;

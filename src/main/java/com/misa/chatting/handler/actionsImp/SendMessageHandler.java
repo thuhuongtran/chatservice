@@ -45,7 +45,6 @@ public class SendMessageHandler extends BaseApiAction {
             // get userData from user service then push to hazelcast
             long user_id = userReq.getUser_id();
             PutData.putUserDataToHazel(userDataService.getUserRequestFromID(userReq, user_id));
-            ChatSocket.start()
         }
         else if(userReq.getStatus()==ErrorCode.INVALID_TOKEN){
 

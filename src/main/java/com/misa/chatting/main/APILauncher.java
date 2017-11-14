@@ -6,6 +6,7 @@ import com.misa.chatting.config.hazelcast.HazelcastConfig;
 import com.misa.chatting.config.vertx.VertxHttpServer;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
+import io.vertx.core.eventbus.EventBus;
 import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +14,6 @@ import org.slf4j.LoggerFactory;
 public class APILauncher {
 	private static Logger logger = LoggerFactory.getLogger(APILauncher.class.getName());
 	public static String sessionID = "";
-
 	public static void main(String[] args) {
 		runVertx();
 	}
@@ -46,6 +46,7 @@ public class APILauncher {
 			int procs = Runtime.getRuntime().availableProcessors();
 
 			Vertx vertx = Vertx.vertx();
+
 			// to deploy
 			vertx.deployVerticle(VertxHttpServer.class.getName(), new DeploymentOptions().setInstances(procs * 2),
 					event -> {
