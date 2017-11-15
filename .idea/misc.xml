@@ -13,6 +13,7 @@
         <option value="E:/Dowload/vertx-sockjs-example-master/pom.xml" />
         <option value="$PROJECT_DIR$/../../core/pom.xml" />
         <option value="E:/Dowload/vertx-eventbus-chat-master/chat/pom.xml" />
+        <option value="$PROJECT_DIR$/../vimensa-backend/vms-server-accounts-management/pom.xml" />
       </list>
     </option>
   </component>

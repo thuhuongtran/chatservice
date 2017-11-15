@@ -15,6 +15,7 @@ public class UserRequest implements Serializable{
     private String timeCreated;
     private int role; // user role = 0
     private int status; // status of token - expired or not
+    private int onHazel; // 0 - not in hazel, 1 - in hazel
 
     public UserRequest() {
 
@@ -29,6 +30,14 @@ public class UserRequest implements Serializable{
 
     public String getEmail() {
         return email;
+    }
+
+    public int getOnHazel() {
+        return onHazel;
+    }
+
+    public void setOnHazel(int onHazel) {
+        this.onHazel = onHazel;
     }
 
     public void setEmail(String email) {

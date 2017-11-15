@@ -2,12 +2,11 @@ package com.misa.chatting.dao;
 
 public class SendMessage {
     private String senderID;
-    private String receiverID;
+    private String chatRoomID;
     private String nickSender;
-    private String nickReceiver;
+    private String chatRoomName;
     private String msg;
     private String senderAvatar;
-    private String receiverAvatar;
     private String senderToken;
 
 
@@ -27,28 +26,12 @@ public class SendMessage {
         this.senderID = senderID;
     }
 
-    public String getReceiverID() {
-        return receiverID;
-    }
-
-    public void setReceiverID(String receiverID) {
-        this.receiverID = receiverID;
-    }
-
     public String getNickSender() {
         return nickSender;
     }
 
     public void setNickSender(String nickSender) {
         this.nickSender = nickSender;
-    }
-
-    public String getNickReceiver() {
-        return nickReceiver;
-    }
-
-    public void setNickReceiver(String nickReceiver) {
-        this.nickReceiver = nickReceiver;
     }
 
     public String getMsg() {
@@ -67,11 +50,19 @@ public class SendMessage {
         this.senderAvatar = senderAvatar;
     }
 
-    public String getReceiverAvatar() {
-        return receiverAvatar;
+    public String getChatRoomID() {
+        return chatRoomID;
     }
 
-    public void setReceiverAvatar(String receiverAvatar) {
-        this.receiverAvatar = receiverAvatar;
+    public void setChatRoomID(String chatRoomID) {
+        this.chatRoomID = chatRoomID;
+    }
+
+    public String getChatRoomName() {
+        return chatRoomName;
+    }
+
+    public void setChatRoomName(String chatRoomName) {
+        this.chatRoomName = chatRoomName;
     }
 }
