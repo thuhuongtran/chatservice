@@ -1,18 +1,13 @@
 package com.misa.chatting.test.sendMessage;
 
-import com.misa.chatting.websocket_config.ChatSocket;
-import com.misa.chatting.websocket_config.ChatSocketConfig;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
 import org.glassfish.tyrus.client.ClientManager;
 
-
-import javax.websocket.DeploymentException;
 import javax.websocket.Session;
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
 import java.util.function.Consumer;
 
 public class TestSendMessage {
@@ -28,9 +23,9 @@ public class TestSendMessage {
         System.out.println("success!");*/
 
         // test starting chatSocket
-        ChatSocketConfig.init();
+      /*  ChatSocketConfig.init();
         System.out.println("chat socket config is initialized");
-        runExample(ChatSocket.class);
+        runExample(ChatSocket.class);*/
         System.out.println("success");
 
     }

@@ -31,10 +31,12 @@ public class ChatUtils {
         sendMessage.setSenderID(jsonObject.get("senderID").getAsString());
         sendMessage.setNickSender(jsonObject.get("nickSender").getAsString());
         sendMessage.setSenderAvatar(jsonObject.get("sendAva").getAsString());
-        sendMessage.setReceiverID(jsonObject.get("receiverID").getAsString());
-        sendMessage.setNickReceiver(jsonObject.get("nickReceiver").getAsString());
-        sendMessage.setReceiverAvatar(jsonObject.get("receiverAva").getAsString());
+        sendMessage.setChatRoomID(jsonObject.get("roomID").getAsString());
+        sendMessage.setChatRoomName(jsonObject.get("roomName").getAsString());
         sendMessage.setSenderToken(jsonObject.get("senderToken").getAsString());
         return sendMessage;
     }
+    /*
+    * date time format
+    * */
 }

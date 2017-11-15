@@ -1,0 +1,5 @@
+13 Nov 2017, 10:45:40,067 Logger is initialed
+13 Nov 2017, 10:45:40,129 APIConfig is initialed
+13 Nov 2017, 10:45:49,255 HazelServer is started.
+13 Nov 2017, 10:45:50,370 HazelcastClientFactory is initialized.
+13 Nov 2017, 10:45:50,730 Your Vert.x application is started!

@@ -17,6 +17,9 @@ public abstract class BaseResponse {
         return error == ErrorCode.SUCCESS;
     }
 
+    public BaseResponse() {
+    }
+
     public abstract String toJonString();
     /*
     * getter and setter Error

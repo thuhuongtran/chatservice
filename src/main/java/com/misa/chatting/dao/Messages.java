@@ -2,6 +2,8 @@ package com.misa.chatting.dao;
 
 import com.google.gson.JsonObject;
 
+import java.util.Date;
+
 public class Messages {
     private String messageID;
     private String chatroomID;
