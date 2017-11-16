@@ -6,7 +6,11 @@
       <module fileurl="file://$USER_HOME$/Downloads/core/core.iml" filepath="$USER_HOME$/Downloads/core/core.iml" />
       <module fileurl="file://$USER_HOME$/Downloads/vertx-sockjs-example-master/vertx-sockjs-example.iml" filepath="$USER_HOME$/Downloads/vertx-sockjs-example-master/vertx-sockjs-example.iml" />
       <module fileurl="file://$USER_HOME$/Downloads/vertx-websocket-chat-master/vertx-websocket-chat.iml" filepath="$USER_HOME$/Downloads/vertx-websocket-chat-master/vertx-websocket-chat.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/../../vimensa-backend/vms-server-accounts-management/vimensa.iml" filepath="$PROJECT_DIR$/../../vimensa-backend/vms-server-accounts-management/vimensa.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/../vimensa-backend/vms-server-accounts-management/vimensa.iml" filepath="$PROJECT_DIR$/../vimensa-backend/vms-server-accounts-management/vimensa.iml" />
+>>>>>>> 149d2b0533e2a13ad0c05707c141c9f8a1003408
     </modules>
   </component>
 </project>

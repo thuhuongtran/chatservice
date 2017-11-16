@@ -3,9 +3,7 @@ package com.misa.chatting.utils;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.misa.chatting.dao.Messages;
-import com.misa.chatting.dao.SendMessage;
-import com.misa.chatting.dao.UserRequest;
+import com.misa.chatting.dao.SendMessageSingleUsers;
 
 public class ChatUtils {
 	/*
@@ -22,21 +20,4 @@ public class ChatUtils {
             return null;
         }
     }
-    /*
-    * get sendMsg from string body
-    * */
-    public static SendMessage jsonToSendMessage(String body){
-        JsonObject jsonObject = (JsonObject) new JsonParser().parse(body);
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setSenderID(jsonObject.get("senderID").getAsString());
-        sendMessage.setNickSender(jsonObject.get("nickSender").getAsString());
-        sendMessage.setSenderAvatar(jsonObject.get("sendAva").getAsString());
-        sendMessage.setChatRoomID(jsonObject.get("roomID").getAsString());
-        sendMessage.setChatRoomName(jsonObject.get("roomName").getAsString());
-        sendMessage.setSenderToken(jsonObject.get("senderToken").getAsString());
-        return sendMessage;
-    }
-    /*
-    * date time format
-    * */
 }

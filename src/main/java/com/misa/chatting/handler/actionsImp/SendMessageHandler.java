@@ -1,7 +1,7 @@
 package com.misa.chatting.handler.actionsImp;
 
 import com.misa.chatting.chatHandler.ReceiveMessages;
-import com.misa.chatting.dao.SendMessage;
+import com.misa.chatting.dao.SendMessageSingleUsers;
 import com.misa.chatting.dao.UserRequest;
 import com.misa.chatting.dbAccess.UserDataAccess;
 import com.misa.chatting.dbAccess.imp.UserDataAccessImp;
@@ -20,58 +20,70 @@ import io.vertx.core.logging.LoggerFactory;
 
 /**
  * get messages from client and then start a room chat
-* */
+ */
 public class SendMessageHandler extends BaseApiAction {
     private Authentication authen = new Authentication();
     private UserDataAccess userDataManagement = new UserDataAccessImp();
     private UserDataService userDataService = new UserDataServiceImp();
-
     /*
     * send text 
     * */
     public static Logger logger = LoggerFactory.getLogger(SendMessageHandler.class.getName());
 
+    /*
+    * to start a new chat box
+    * receiverID set to equal chatroomID
+    * chat 2 single users
+    * chatRoomName set to equal receiverName
+    * */
     @Override
     public BaseResponse handle(HttpServerRequest request) throws Exception {
-        BaseResponse response = new SimpleResponse();
-        response.setError(555);
-        return response;
-    }
-    @Override
-    public BaseResponse handler(String bodyReq) throws Exception {
-        // get info from string body
-        SendMessage sendMessage = ChatUtils.jsonToSendMessage(bodyReq); // not confirm -  wrong have to change to message obj
-        // check filter security - return UserID
-        UserRequest userReq = authen.checkToken(sendMessage.getSenderToken()); // check sender token - security
-        if(userReq.getStatus()== ErrorCode.ACTIVE_TOKEN
-                ||userReq.getStatus()== ErrorCode.UPDATE_TOKEN){
-            // get userData from user service then push to hazelcast
-            long user_id = userReq.getUser_id();
-            PutData.putUserDataToHazel(userDataService.getUserRequestFromID(userReq, user_id));
-            //call eventbus publish text messages
-            ReceiveMessages.sendMsg(sendMessage);
-            // response
-            BaseResponse response = new SimpleResponse();
-            response.setError(332);
-        }
-        else if(userReq.getStatus()==ErrorCode.INVALID_TOKEN){
-            BaseResponse response = new SimpleResponse();
-            response.setError(333);
-            System.out.println("Error invalid");
+        // create response
+        BaseResponse response;
+
+        // get request param - check null params
+        String senderID = request.getParam("senderID");
+        String senderNick = request.getParam("nickSender");
+        String sendAva = request.getParam("senderAvatar");
+        String senderToken = request.getParam("senderToken");
+        String recceiverID = request.getParam("receiverID");
+        String receiverNick = request.getParam("receiverNick");
+        String msg = request.getParam("msg");
+
+        // check null param - return error null param
+        if (senderID == null || sendAva == null || senderNick == null || senderToken == null || recceiverID == null
+                || receiverNick == null || msg == null) {
+            response = new SimpleResponse();
+            response.setError(ErrorCode.NULL_REQUEST_PARAM);
         }
         else{
-            BaseResponse response = new SimpleResponse();
-            response.setError(335);
+
+            // set senderMessage obj
+            // chat_roomId = senderId + receiverId
+
+            response = new SendMessageSingleUsers(senderID,recceiverID,senderNick,receiverNick,msg,sendAva,senderToken);
+            // check security
+            // set userID and user-status-token
+            UserRequest userReq = authen.checkToken(senderToken); // check sender token - security
+
+            if (userReq.getStatus() == ErrorCode.ACTIVE_TOKEN
+                    || userReq.getStatus() == ErrorCode.UPDATE_TOKEN) {
+                // get userData from user service then push to hazelcast
+                long user_id = userReq.getUser_id();
+                UserRequest userRequest = userDataService.getUserRequestFromID(userReq, user_id);
+                PutData.putUserDataToHazel(userRequest);
+                //call eventbus publish text messages
+                ReceiveMessages.sendMsg((SendMessageSingleUsers) response);
+
+            } else if (userReq.getStatus() == ErrorCode.INVALID_TOKEN) {
+                System.out.println("Error invalid token");
+                logger.info("Error invalid token");
+            }
+
         }
-        // get userData from userID
-        // start a chat room:
-        /*
-        *1. call @onOpen: add 1 session
-        * 2.send message obj - json to client
-        *
-        * */
-        return null;
+        return response;
     }
+
 
 
 }

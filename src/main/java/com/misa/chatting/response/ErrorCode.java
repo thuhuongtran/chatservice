@@ -15,4 +15,5 @@ public class ErrorCode {
 	public static int ACTIVE_TOKEN=6;
 	public static final int NOT_AUTHORISED = 7;
 	public static final int SQL_EXCEPTION = 8;
+	public static final int NULL_REQUEST_PARAM = 9;
 }

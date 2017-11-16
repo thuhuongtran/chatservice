@@ -25,15 +25,12 @@ public class UserDataServiceImp implements UserDataService {
         // check whether user is on hazelcast otherwise get from db
         HazelcastInstance instance = HazelcastClientFactory.getSingleClient();
         IMap<Long, UserRequest> userMap = instance.getMap("users");
-        if (userMap.containsKey(id)) { // add or onHazel status ==1
+        if (userMap.containsKey(id)) {
             UserRequest userReq = userMap.get(id);
-            // Userdata is on Hazel then set onHazel to 1, otherwise set 0
-            userReq.setOnHazel(1);
             return userReq;
         } else {
             UserRequest userReq = userDataAccess.getUserDataByID(
                     userDataAccess.loadUserResultSetByID(id, userResponse), user);
-            userReq.setOnHazel(0);
             return userReq;
         }
     }

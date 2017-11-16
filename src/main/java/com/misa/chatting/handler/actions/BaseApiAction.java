@@ -18,9 +18,6 @@ public abstract class BaseApiAction {
 
     public abstract BaseResponse handle(HttpServerRequest request) throws Exception;
 
-  //  public abstract BaseResponse handle(HttpServerRequest request) throws Exception;
-    public abstract BaseResponse handler(String body) throws Exception;
-
     /*
     * getter and setter method
     * */
