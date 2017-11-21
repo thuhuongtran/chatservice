@@ -14,6 +14,7 @@ import io.vertx.core.eventbus.EventBus;
  * @author Junbong
  */
 public class Sender extends AbstractVerticle {
+
   public static void main(String[] args) {
     /*
     eventBus = Vertx.vertx().eventBus();
@@ -21,7 +22,6 @@ public class Sender extends AbstractVerticle {
     */
     Runner.runClusteredExample(Sender.class);
   }
-  public static EventBus eventBus;
   @Override
   public void start() throws Exception {
     EventBus eventBus = getVertx().eventBus();

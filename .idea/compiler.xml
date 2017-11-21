@@ -22,11 +22,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="chatservice" target="1.8" />
-      <module name="core" target="1.8" />
-      <module name="vertx-sockjs-example" target="1.8" />
-      <module name="vertx-websocket-chat" target="1.7" />
-      <module name="vimensa" target="1.8" />
+      <module name="misa" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

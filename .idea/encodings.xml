@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$USER_HOME$/Downloads/core" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Downloads/vertx-websocket-chat-master" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-<<<<<<< HEAD
-    <file url="file://$PROJECT_DIR$/../../vimensa-backend/vms-server-accounts-management" charset="UTF-8" />
-=======
-    <file url="file://$PROJECT_DIR$/../vimensa-backend/vms-server-accounts-management" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../core" charset="UTF-8" />
->>>>>>> 149d2b0533e2a13ad0c05707c141c9f8a1003408
   </component>
 </project>

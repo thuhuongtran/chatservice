@@ -3,6 +3,8 @@ package com.misa.chatting.service.hazelcast_data_manage;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
 import com.misa.chatting.config.hazelcast.HazelcastClientFactory;
+import com.misa.chatting.dao.ChatRoomTextHistory;
+import com.misa.chatting.dao.SendTextSingleUsers;
 import com.misa.chatting.dao.UserRequest;
 
 public class PutData {
@@ -24,4 +26,16 @@ public class PutData {
         }
         return false;
     }
+    // put message to roomHistory - call whenever user send a new msg
+    public static void putMsgToRoom(SendTextSingleUsers msg){
+        HazelcastInstance instance = HazelcastClientFactory.getSingleClient();
+        IMap<String, ChatRoomTextHistory> roomHistoryIMap = instance.getMap("roomHistory");
+        ChatRoomTextHistory chatRoom = new ChatRoomTextHistory();
+        chatRoom.setRoomID(msg.getChatRoomID());
+        chatRoom.setRoomName(msg.getChatRoomName());
+       // chatRoom.setCreateAt("");
+        chatRoom.setText(msg);
+        roomHistoryIMap.put(msg.getChatRoomID(), chatRoom);
+    }
+
 }

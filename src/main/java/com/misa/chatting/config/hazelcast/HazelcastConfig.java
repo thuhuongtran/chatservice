@@ -3,6 +3,7 @@ package com.misa.chatting.config.hazelcast;
 import com.hazelcast.config.*;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
+import com.misa.chatting.dao.ChatRoomTextHistory;
 import com.misa.chatting.dao.UserRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,6 +46,7 @@ public class HazelcastConfig {
         cfg.setGroupConfig(groupConfig);
         HazelcastInstance hazelcastInstance = Hazelcast.newHazelcastInstance(cfg);
         Map<String, UserRequest> userRequestMap = hazelcastInstance.getMap("users");
+        Map<String, ChatRoomTextHistory> roomHistoryMap = hazelcastInstance.getMap("roomHistory");
     }
 
 }

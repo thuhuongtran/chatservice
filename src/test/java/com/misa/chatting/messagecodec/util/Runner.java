@@ -162,7 +162,7 @@ public class Runner {
   static class JSHttpUploadClientRunner {
     public static void main(String[] args) {
       Runner.runJSExample("io/vertx/example/core/http/upload/client.js");
-    }
+}
   }
 
   static class JSHttpWebsocketsServerRunner {

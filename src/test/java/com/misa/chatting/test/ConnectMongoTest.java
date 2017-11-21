@@ -18,7 +18,7 @@ public class ConnectMongoTest {
 		 Document doc = new Document();
          
          doc.append("handler", "chatting");
-         doc.append("Document", "Messages");
+         doc.append("Document", "TextMsg");
          doc.append("document", "Chat Room");
          
          MongoPool.log("chatting", doc);

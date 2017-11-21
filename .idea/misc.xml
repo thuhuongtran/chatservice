@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Kotlin2JsCompilerArguments">
-    <option name="sourceMapPrefix" value="" />
-    <option name="sourceMapEmbedSources" value="inlining" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/Downloads/vertx-websocket-chat-master/pom.xml" />
         <option value="$USER_HOME$/Downloads/vertx-sockjs-example-master/pom.xml" />
-<<<<<<< HEAD
         <option value="$USER_HOME$/Downloads/core/pom.xml" />
         <option value="$PROJECT_DIR$/../../vimensa-backend/vms-server-accounts-management/pom.xml" />
-=======
         <option value="E:/Dowload/vertx-sockjs-example-master/pom.xml" />
         <option value="$PROJECT_DIR$/../../core/pom.xml" />
         <option value="E:/Dowload/vertx-eventbus-chat-master/chat/pom.xml" />
         <option value="$PROJECT_DIR$/../vimensa-backend/vms-server-accounts-management/pom.xml" />
->>>>>>> 149d2b0533e2a13ad0c05707c141c9f8a1003408
       </list>
     </option>
   </component>

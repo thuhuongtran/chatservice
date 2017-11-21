@@ -28,7 +28,7 @@ public class ClusterReceiver extends AbstractVerticle {
       System.out.println("Custom message received: "+customMessage.getSummary());
 
       // Replying is same as publishing
-      CustomMessage replyMessage = new CustomMessage(200, "a00000002", "Message sent from cluster receiver!");
+      CustomMessage replyMessage = new CustomMessage(200, "a00000002", "Message sent from cluster receiver 1!");
       message.reply(replyMessage);
     });
   }

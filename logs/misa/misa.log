@@ -1,18 +1,5 @@
-<<<<<<< HEAD
-15 Nov 2017, 11:23:09,999 Logger is initialed
-15 Nov 2017, 11:23:10,115 APIConfig is initialed
-15 Nov 2017, 11:23:13,654 HazelServer is started.
-15 Nov 2017, 11:23:15,829 HazelcastClientFactory is initialized.
-15 Nov 2017, 11:23:16,534 Your Vert.x application is started!
-15 Nov 2017, 11:39:56,203 Logger is initialed
-15 Nov 2017, 11:39:56,252 APIConfig is initialed
-15 Nov 2017, 11:39:59,524 HazelServer is started.
-15 Nov 2017, 11:39:59,594 HazelcastClientFactory is initialized.
-15 Nov 2017, 11:39:59,943 Your Vert.x application is started!
-=======
-16 Nov 2017, 00:04:58,722 Logger is initialed
-16 Nov 2017, 00:05:01,449 APIConfig is initialed
-16 Nov 2017, 00:05:20,296 HazelServer is started.
-16 Nov 2017, 00:05:21,069 HazelcastClientFactory is initialized.
-16 Nov 2017, 00:05:26,190 Your Vert.x application is started!
->>>>>>> 149d2b0533e2a13ad0c05707c141c9f8a1003408
+21 Nov 2017, 10:14:04,743 Logger is initialed
+21 Nov 2017, 10:14:04,828 APIConfig is initialed
+21 Nov 2017, 10:14:08,383 HazelServer is started.
+21 Nov 2017, 10:14:08,583 HazelcastClientFactory is initialized.
+21 Nov 2017, 10:14:09,515 Your Vert.x application is started!

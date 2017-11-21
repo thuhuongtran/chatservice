@@ -1,17 +1,17 @@
 package com.misa.chatting.dbAccess.message;
 
 import com.google.gson.Gson;
-import com.misa.chatting.dao.Messages;
+import com.misa.chatting.dao.TextMsg;
 
 import javax.websocket.DecodeException;
 import javax.websocket.Decoder;
 import javax.websocket.EndpointConfig;
 
-public class MessageDecoder implements Decoder.Text<Messages>{
+public class MessageDecoder implements Decoder.Text<TextMsg>{
     private static Gson gson = new Gson();
     @Override
-    public Messages decode(String s) throws DecodeException {
-        return gson.fromJson(s, Messages.class);
+    public TextMsg decode(String s) throws DecodeException {
+        return gson.fromJson(s, TextMsg.class);
     }
 
     @Override
