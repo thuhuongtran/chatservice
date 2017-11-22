@@ -84,6 +84,7 @@ public class SimpleFormUploadServer extends AbstractVerticle {
           value = (List<String>) entry.getValue();
         }
         else{
+
           value = (String) entry.getValue();
         }
         paramMap.put(key, value);

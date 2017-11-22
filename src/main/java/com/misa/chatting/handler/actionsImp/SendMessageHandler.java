@@ -6,6 +6,7 @@ import com.misa.chatting.dao.UserRequest;
 import com.misa.chatting.dbAccess.UserDataAccess;
 import com.misa.chatting.dbAccess.imp.UserDataAccessImp;
 import com.misa.chatting.handler.actions.BaseApiAction;
+import com.misa.chatting.main.APILauncher;
 import com.misa.chatting.response.BaseResponse;
 import com.misa.chatting.response.ErrorCode;
 import com.misa.chatting.service.UserDataService;
@@ -22,14 +23,12 @@ import java.util.Date;
  * get messages from client and then start a room chat
  */
 public class SendMessageHandler extends BaseApiAction {
-    private Authentication authen = new Authentication();
-    private UserDataAccess userDataManagement = new UserDataAccessImp();
     private UserDataService userDataService = new UserDataServiceImp();
     /*
     * send text
     * call whenever send a msg
     * */
-    public static Logger logger = LoggerFactory.getLogger(SendMessageHandler.class.getName());
+    public static Logger logger = LoggerFactory.getLogger(APILauncher.class.getName());
 
     /*
     * to start a new chat box

@@ -9,5 +9,12 @@
       "roles":[],
       "method":"POST"
     }
+    {
+      "path":"/sendFile",
+      "handler":"com.misa.chatting.handler.actionsImp.SendFileHandler",
+      "isPublic":true,
+      "roles":[],
+      "method":"POST"
+    }
   ]
 }

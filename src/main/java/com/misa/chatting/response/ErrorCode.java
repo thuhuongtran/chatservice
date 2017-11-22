@@ -16,4 +16,5 @@ public class ErrorCode {
 	public static final int NOT_AUTHORISED = 7;
 	public static final int SQL_EXCEPTION = 8;
 	public static final int NULL_REQUEST_PARAM = 9;
+	public static final int FAIL_UPLOAD_FILE=10;
 }
