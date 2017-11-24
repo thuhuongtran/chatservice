@@ -1,7 +1,10 @@
 package com.misa.chatting.config.vertx;
 
 import com.misa.chatting.config.apiconfig.APIconfig;
+import com.misa.chatting.config.chat_socket.ChatSocketConfig;
+import com.misa.chatting.dao.SendMsgSingleUsers;
 import com.misa.chatting.handler.actions.BaseApiAction;
+import com.misa.chatting.main.APILauncher;
 import com.misa.chatting.response.BaseResponse;
 import com.misa.chatting.response.ErrorCode;
 import com.misa.chatting.response.SimpleResponse;
@@ -25,11 +28,11 @@ import io.vertx.ext.web.handler.sockjs.SockJSHandler;
 
 public class VertxHttpServer extends AbstractVerticle implements Handler<HttpServerRequest> {
 
-    static Logger logger = LoggerFactory.getLogger(VertxHttpServer.class.getName());
+    static Logger logger = LoggerFactory.getLogger(APILauncher.class.getName());
     private HttpServer server;
     private static final CharSequence RESPONSE_TYPE_JSON = new AsciiString("application/json");
     /*
-	* override start method when extens AbstractVerticle
+    * override start method when extens AbstractVerticle
 	* to call vertx - core
 	* */
 
@@ -55,13 +58,13 @@ public class VertxHttpServer extends AbstractVerticle implements Handler<HttpSer
                 .addOutboundPermitted(new PermittedOptions());
         return SockJSHandler.create(vertx).bridge(options, event -> {
             if (event.type() == BridgeEventType.SOCKET_CREATED) {
-                logger.info("A socket was created");
+                logger.info(VertxHttpServer.class.getName()+" A socket was created");
                 System.out.println("A socket was created");
             } else if (event.type() == BridgeEventType.SOCKET_CLOSED) {
-                logger.info("Socket was closed");
+                logger.info(VertxHttpServer.class.getName()+" Socket was closed");
                 System.out.println("Socket was closed");
             } else {
-                logger.info("Can not open a socket.");
+                logger.info(VertxHttpServer.class.getName()+" Can not open a socket.");
             }
             event.complete(true);
         });
@@ -112,11 +115,53 @@ public class VertxHttpServer extends AbstractVerticle implements Handler<HttpSer
         //
         router.route().handler(StaticHandler.create().setWebRoot("webroot"));
         request.setExpectMultipart(true);
+        // if path is equal to upload then call uploadHandler
+        if (request.uri().equals("/sendFile/uploadFile")) {
+            request.uploadHandler(upload -> {
+                // check upload exception
+                upload.exceptionHandler(cause -> {
+                    BaseResponse response = null;
+                    response.setError(ErrorCode.FAIL_UPLOAD_FILE);
+                    logger.info(VertxHttpServer.class.getName()+"upload file fail.");
+                });
+                // otherwise call the endHandler
+                upload.endHandler(req -> {
+                    BaseResponse response = null;
+                    try {
+                        if (handler.isPublic()) {
+                            // get fileName + file directory
+                            String fileName = upload.filename();
+                            String fileLink = ChatSocketConfig.UPLOAD_FILE_DIRECTORY+fileName;
+                            response.setFileLink(fileLink);
+
+                            response = handler.handle(request);
+                            logger.info(VertxHttpServer.class.getName()+" upload file  success, file link="+fileLink);
+                        } else {
+                            //String nickname = request.formAttributes().get("n");
+                            String accessToken = request.formAttributes().get("at");
+                            response = handlePrivateRequest(handler, request, accessToken);
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        response = new SimpleResponse(ErrorCode.SYSTEM_ERROR);
+                    }
+                    makeHttpResponse(request, response);
+                });
+                // get fileName + file directory
+                String fileName = upload.filename();
+                String fileLink = ChatSocketConfig.UPLOAD_FILE_DIRECTORY+fileName;
+                // store in files directory
+                upload.streamToFileSystem(fileLink);
+                logger.info(VertxHttpServer.class.getName()+" store upload file in directory successfully, file link="+fileLink);
+            });
+        }
+        // otherwise
         request.endHandler(req -> {
             BaseResponse response = null;
             try {
                 if (handler.isPublic()) {
                     response = handler.handle(request);
+
                 } else {
                     //String nickname = request.formAttributes().get("n");
                     String accessToken = request.formAttributes().get("at");

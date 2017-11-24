@@ -1,10 +1,12 @@
 package com.misa.chatting.handler.actionsImp;
 
 import com.misa.chatting.chatHandler.ReceiveMessages;
-import com.misa.chatting.dao.SendTextSingleUsers;
+import com.misa.chatting.config.chat_socket.MessageType;
+import com.misa.chatting.dao.Message;
+import com.misa.chatting.dao.SendMsgSingleUsers;
 import com.misa.chatting.dao.UserRequest;
-import com.misa.chatting.dbAccess.UserDataAccess;
-import com.misa.chatting.dbAccess.imp.UserDataAccessImp;
+import com.misa.chatting.dbAccess.MessageDataAccess;
+import com.misa.chatting.dbAccess.imp.MessageDataAccessImp;
 import com.misa.chatting.handler.actions.BaseApiAction;
 import com.misa.chatting.main.APILauncher;
 import com.misa.chatting.response.BaseResponse;
@@ -12,7 +14,6 @@ import com.misa.chatting.response.ErrorCode;
 import com.misa.chatting.service.UserDataService;
 import com.misa.chatting.service.hazelcast_data_manage.PutData;
 import com.misa.chatting.service.serviceImp.UserDataServiceImp;
-import com.misa.chatting.utils.Authentication;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
@@ -24,9 +25,11 @@ import java.util.Date;
  */
 public class SendMessageHandler extends BaseApiAction {
     private UserDataService userDataService = new UserDataServiceImp();
+    private MessageDataAccess msgDB = new MessageDataAccessImp();
     /*
     * send text
     * call whenever send a msg
+    *
     * */
     public static Logger logger = LoggerFactory.getLogger(APILauncher.class.getName());
 
@@ -58,7 +61,8 @@ public class SendMessageHandler extends BaseApiAction {
         if (senderID == null || sendAva == null || senderNick == null || senderToken == null || recceiverID == null
                 || receiverNick == null || msg == null) {
             //response = new SimpleResponse();
-            response = new SendTextSingleUsers(senderID,recceiverID,senderNick,receiverNick,msg,sendAva,senderToken, time);
+            response = new SendMsgSingleUsers(senderID,recceiverID,senderNick,receiverNick,msg,sendAva,senderToken, time,
+                    MessageType.MSG_TEXT);
             response.setError(ErrorCode.NULL_REQUEST_PARAM);
         }
         else{
@@ -66,7 +70,8 @@ public class SendMessageHandler extends BaseApiAction {
             // set senderMessage obj
             // chat_roomId = senderId + receiverId
 
-            response = new SendTextSingleUsers(senderID,recceiverID,senderNick,receiverNick,msg,sendAva,senderToken, time);
+            response = new SendMsgSingleUsers(senderID,recceiverID,senderNick,receiverNick,msg,sendAva,senderToken, time,
+                    MessageType.MSG_TEXT);
             // check security
             // set userID and user-status-token
            // UserRequest userReq = authen.checkToken(senderToken); // check sender token - security
@@ -82,12 +87,14 @@ public class SendMessageHandler extends BaseApiAction {
                 UserRequest userRequest = userDataService.getUserRequestFromID(userReq, user_id);
                 PutData.putUserDataToHazel(userRequest);
                 //call eventbus publish text messages - send msg to other member in chat room
-                ReceiveMessages.sendMsg((SendTextSingleUsers) response);
+                ReceiveMessages.sendMsg((SendMsgSingleUsers) response);
                 // put text message to hazelcast - roomHistory
-                PutData.putMsgToRoom((SendTextSingleUsers) response);
+                PutData.putMsgToRoom((SendMsgSingleUsers) response);
+                // put text msg to db
+                msgDB.writeMsgToDB(msgDB.sendTxtSingleUserToMsg((SendMsgSingleUsers) response));
                 // if success response to json obj which has its msg is Sent - Da gui
-               ((SendTextSingleUsers) response).setMsg("Da gui"); // while can not change
-               // logger.info(((SendTextSingleUsers) response).getMsg());
+               ((SendMsgSingleUsers) response).setMsg("Da gui"); // while can not change
+               // logger.info(((SendMsgSingleUsers) response).getMsg());
                response.setError(ErrorCode.SUCCESS);
 
             } else if (userReq.getStatus() == ErrorCode.INVALID_TOKEN) {

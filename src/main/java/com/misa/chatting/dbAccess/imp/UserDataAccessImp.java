@@ -3,6 +3,7 @@ package com.misa.chatting.dbAccess.imp;
 import com.misa.chatting.dao.UserRequest;
 import com.misa.chatting.config.database_config.UserServiceConnect;
 import com.misa.chatting.dbAccess.UserDataAccess;
+import com.misa.chatting.main.APILauncher;
 import com.misa.chatting.response.ErrorCode;
 import com.misa.chatting.response.UserResponse;
 import org.slf4j.Logger;
@@ -15,7 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserDataAccessImp implements UserDataAccess {
-    private static Logger logger = LoggerFactory.getLogger(UserDataAccessImp.class.getName());
+    private static Logger logger = LoggerFactory.getLogger(APILauncher.class.getName());
 
     /*
     * load user data from ResultSet

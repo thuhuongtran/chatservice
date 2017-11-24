@@ -6,7 +6,8 @@ package com.misa.chatting.response;
  * check if success or not
  * */
 public abstract class BaseResponse {
-    private int error = ErrorCode.SUCCESS;
+    private int error = ErrorCode.UNPASS;
+    private String fileLink = null;
 
     /*
     * compare errorCode and successCode
@@ -31,5 +32,13 @@ public abstract class BaseResponse {
 
     public void setError(int error) {
         this.error = error;
+    }
+
+    public String getFileLink() {
+        return fileLink;
+    }
+
+    public void setFileLink(String fileLink) {
+        this.fileLink = fileLink;
     }
 }

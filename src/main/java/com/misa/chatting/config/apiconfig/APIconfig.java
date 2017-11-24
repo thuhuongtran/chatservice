@@ -11,10 +11,15 @@ import java.util.Map;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.misa.chatting.handler.actions.BaseApiAction;
+import com.misa.chatting.main.APILauncher;
 import com.misa.chatting.utils.ChatUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class APIconfig {
-	  public static int PORT = 0;
+	private static Logger logger = LoggerFactory.getLogger(APILauncher.class.getName());
+
+	public static int PORT = 0;
 	    public static String MODE = "live";
 	    private static String API_CONFIG_FILE = "config/api/api.json";
 	    private static  Map<String, BaseApiAction> handlers = new HashMap<String, BaseApiAction>();

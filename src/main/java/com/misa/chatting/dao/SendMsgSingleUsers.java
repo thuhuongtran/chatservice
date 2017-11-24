@@ -4,7 +4,11 @@ import com.google.gson.JsonObject;
 import com.misa.chatting.response.BaseResponse;
 import com.misa.chatting.response.ErrorCode;
 
-public class SendTextSingleUsers extends BaseResponse {
+import java.io.Serializable;
+
+public class SendMsgSingleUsers extends BaseResponse implements Serializable{
+    public static final long serialVersionUID = 1L;
+
     private String senderID;
     private String chatRoomID;
     private String nickSender;
@@ -13,12 +17,11 @@ public class SendTextSingleUsers extends BaseResponse {
     private String senderAvatar;
     private String senderToken;
     private String sendTime;
+    private int msgType;
 
-    public SendTextSingleUsers(String senderID, String chatRoomID, String nickSender,
-                               String chatRoomName, String msg, String senderAvatar, String senderToken,
-                               String sendTime) {
+    public SendMsgSingleUsers(String senderID, String chatRoomID, String nickSender, String chatRoomName,
+                              String msg, String senderAvatar, String senderToken, String sendTime, int msgType) {
         this.senderID = senderID;
-        // chat_roomID = senderID + receiverID
         this.chatRoomID = senderID+chatRoomID;
         this.nickSender = nickSender;
         this.chatRoomName = chatRoomName;
@@ -26,9 +29,30 @@ public class SendTextSingleUsers extends BaseResponse {
         this.senderAvatar = senderAvatar;
         this.senderToken = senderToken;
         this.sendTime = sendTime;
+        this.msgType = msgType;
     }
 
-    public SendTextSingleUsers() {
+    public SendMsgSingleUsers(String senderID, String chatRoomID, String nickSender, String chatRoomName,
+                              String senderAvatar, String senderToken, String sendTime, int msgType) {
+        this.senderID = senderID;
+        this.chatRoomID = senderID+chatRoomID;
+        this.nickSender = nickSender;
+        this.chatRoomName = chatRoomName;
+        this.senderAvatar = senderAvatar;
+        this.senderToken = senderToken;
+        this.sendTime = sendTime;
+        this.msgType = msgType;
+    }
+
+    public SendMsgSingleUsers() {
+    }
+
+    public int getMsgType() {
+        return msgType;
+    }
+
+    public void setMsgType(int msgType) {
+        this.msgType = msgType;
     }
 
     public String getSendTime() {
@@ -106,8 +130,10 @@ public class SendTextSingleUsers extends BaseResponse {
             json.addProperty("senderAva", getSenderAvatar());
             json.addProperty("msg", getMsg());
             json.addProperty("userToken", getSenderToken());
-
+            json.addProperty("msgType", getMsgType());
         }
+        // add fileLink
+        json.addProperty("fileLink",getFileLink());
         // add error
         json.addProperty("e", getError());
         return json.toString();

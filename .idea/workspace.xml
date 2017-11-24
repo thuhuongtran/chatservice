@@ -2,14 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2f71db2-3dec-4806-821c-768ae87ac639" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendFileSingleUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendFileHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/hiraki/hiraki.log.2017-11-13" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/config/chat_socket/MessageType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/dao/Message.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/dao/SendMsgSingleUsers.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/dbAccess/MessageDataAccess.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/dbAccess/imp/MessageDataAccessImp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/handler/actionsImp/SendFileHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/com/misa/chatting/test/sendMessage/SendFileHandlerTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/misa/misa.log.2017-11-21" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/chat_socket/MessageType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/Message.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/MessageDataAccess.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/imp/MessageDataAccessImp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/misa/chatting/test/sendMessage/SendFileHandlerTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/ChatRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/Messages.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendFileSingleUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/dao/ChatRoom.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/dao/Messages.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/dao/SendTextSingleUsers.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendTextSingleUsers.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendMsgSingleUsers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/chatHandler/ReceiveMessages.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/chatHandler/ReceiveMessages.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/config/apiconfig/APIconfig.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/config/apiconfig/APIconfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/config/chat_socket/ChatSocketConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/config/chat_socket/ChatSocketConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/config/vertx/VertxHttpServer.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/config/vertx/VertxHttpServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/dao/ChatRoomTextHistory.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/dao/ChatRoomTextHistory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/dbAccess/imp/UserDataAccessImp.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/dbAccess/imp/UserDataAccessImp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/handler/actionsImp/SendMessageHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/handler/actionsImp/SendMessageHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/response/BaseResponse.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/response/BaseResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/response/ErrorCode.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/response/ErrorCode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/misa/chatting/service/hazelcast_data_manage/PutData.class" afterPath="$PROJECT_DIR$/target/classes/com/misa/chatting/service/hazelcast_data_manage/PutData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/examples/vertx/SimpleFormUploadServer.class" afterPath="$PROJECT_DIR$/target/test-classes/com/examples/vertx/SimpleFormUploadServer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/api/api.json" afterPath="$PROJECT_DIR$/config/api/api.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/hiraki/hiraki.log" afterPath="$PROJECT_DIR$/logs/hiraki/hiraki.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/misa/misa.log" afterPath="$PROJECT_DIR$/logs/misa/misa.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/chatHandler/ReceiveMessages.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/chatHandler/ReceiveMessages.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/apiconfig/APIconfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/apiconfig/APIconfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/chat_socket/ChatSocketConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/chat_socket/ChatSocketConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHttpServer.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHttpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/ChatRoomTextHistory.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/ChatRoomTextHistory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/imp/UserDataAccessImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/imp/UserDataAccessImp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendFileHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendFileHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendMessageHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendMessageHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/response/BaseResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/response/BaseResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/response/ErrorCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/response/ErrorCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/misa/chatting/vertx-fileupload-master/src/main/java/com/examples/vertx/SimpleFormUploadServer.java" afterPath="$PROJECT_DIR$/src/test/java/com/misa/chatting/vertx-fileupload-master/src/main/java/com/examples/vertx/SimpleFormUploadServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/misa/chatting/service/hazelcast_data_manage/PutData.java" afterPath="$PROJECT_DIR$/src/main/java/com/misa/chatting/service/hazelcast_data_manage/PutData.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$USER_HOME$/Downloads/vertx-websocket-chat-master/target/" />
@@ -32,8 +71,33 @@
             <file leaf-file-name="VertxHttpServer.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHttpServer.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="238">
-                    <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+                  <state relative-caret-position="216">
+                    <caret line="159" column="21" lean-forward="false" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="BaseResponse.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/response/BaseResponse.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="153">
+                    <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+                    <folding>
+                      <element signature="e#661#662#0" expanded="true" />
+                      <element signature="e#692#693#0" expanded="true" />
+                      <element signature="e#740#741#0" expanded="true" />
+                      <element signature="e#780#781#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="BaseApiAction.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actions/BaseApiAction.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="172">
+                    <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
                     <folding />
                   </state>
                 </provider>
@@ -42,40 +106,8 @@
             <file leaf-file-name="SendMessageHandler.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendMessageHandler.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="294">
-                    <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="SendTextSingleUsers.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendTextSingleUsers.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="357">
-                    <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="ReceiveMessages.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/chatHandler/ReceiveMessages.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="306">
-                    <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="31" selection-end-column="36" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Messages_codec.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/chatHandler/codec/Messages_codec.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="187">
-                    <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+                  <state relative-caret-position="291">
+                    <caret line="55" column="27" lean-forward="false" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
                     <folding />
                   </state>
                 </provider>
@@ -84,61 +116,49 @@
             <file leaf-file-name="SimpleFormUploadServer.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/vertx-fileupload-master/src/main/java/com/examples/vertx/SimpleFormUploadServer.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="287">
-                    <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+                  <state relative-caret-position="257">
+                    <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="SimpleFormUploadServer.java" pinned="false" current-in-tab="true">
+            <file leaf-file-name="SimpleFormUploadServer.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/simpleformupload/SimpleFormUploadServer.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="508">
-                    <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+                  <state relative-caret-position="274">
+                    <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="Sender.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/Sender.java">
+            <file leaf-file-name="ErrorCode.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/response/ErrorCode.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="134">
-                    <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/util/Runner.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="255">
-                    <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+                  <state relative-caret-position="323">
+                    <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="LocalReceiver.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/LocalReceiver.java">
+            <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Client.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="34">
-                    <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="306">
+                    <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Server.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="119">
+                    <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -153,11 +173,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Client.java">
+      <file leaf-file-name="SendFileHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendFileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="68">
+              <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,14 +185,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Server.java">
+      <file leaf-file-name="PlatformConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/apiconfig/PlatformConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PutData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/service/hazelcast_data_manage/PutData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatSocketConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/chat_socket/ChatSocketConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendMsgSingleUsers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendMsgSingleUsers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,63 +228,48 @@
       <file leaf-file-name="APILauncher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/main/APILauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendFileHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendFileHandler.java">
+      <file leaf-file-name="Roles.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/Roles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIconfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/apiconfig/APIconfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ErrorCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/response/ErrorCode.java">
+      <file leaf-file-name="MessageDataAccessImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/imp/MessageDataAccessImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="355">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendFileSingleUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendFileSingleUser.java">
+      <file leaf-file-name="ChatRoomTextHistory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/ChatRoomTextHistory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/simpleformupload/index.html">
+      <file leaf-file-name="UserRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/UserRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="77" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -269,7 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/chat-socket.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/websocket_config/ChatSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/service/socket/Messages_codec.java" />
         <option value="$USER_HOME$/Downloads/vertx-sockjs-example-master/src/main/java/io/vertx/example/web/realtime/Server.java" />
@@ -278,7 +310,6 @@
         <option value="$PROJECT_DIR$/config/hazelcast.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/main/APILauncher.java" />
         <option value="$PROJECT_DIR$/../../core/src/main/java/com/misa/api/response/IAPResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHttpServer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/util/CustomMessage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/util/Runner.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/LocalReceiver.java" />
@@ -288,14 +319,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/service/hazelcast_data_manage/PutData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/utils/ChatUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/websocket_config/ChatSocket.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Client.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Server.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/vertx-fileupload-master/src/main/java/com/examples/vertx/SimpleFormUploadServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/chatHandler/ReceiveMessages.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendMessageHandler.java" />
-        <option value="$PROJECT_DIR$/config/api/api.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendFileSingleUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/response/ErrorCode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/test/sendMessage/SendFileHandlerTest.java" />
+        <option value="$PROJECT_DIR$/config/api/api.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendTextSingleUsers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendMessageSingleUsers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actions/BaseApiAction.java" />
+        <option value="$PROJECT_DIR$/config/chat-socket.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/chat_socket/ChatSocketConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendMsgSingleUsers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHttpServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/response/BaseResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendFileHandler.java" />
       </list>
     </option>
@@ -310,9 +350,9 @@
     <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="142" />
-    <option name="width" value="1041" />
+    <option name="x" value="206" />
+    <option name="y" value="105" />
+    <option name="width" value="1324" />
     <option name="height" value="902" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -335,7 +375,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -349,7 +389,223 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="chatHandler" type="cbb8eebc:String" user="chatHandler" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="chatHandler" type="cbb8eebc:String" user="chatHandler" />
+              <item name="codec" type="cbb8eebc:String" user="codec" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+              <item name="apiconfig" type="cbb8eebc:String" user="apiconfig" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+              <item name="chat_socket" type="cbb8eebc:String" user="chat_socket" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+              <item name="database_config" type="cbb8eebc:String" user="database_config" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+              <item name="hazelcast" type="cbb8eebc:String" user="hazelcast" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+              <item name="vertx" type="cbb8eebc:String" user="vertx" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="dao" type="cbb8eebc:String" user="dao" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="dbAccess" type="cbb8eebc:String" user="dbAccess" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="dbAccess" type="cbb8eebc:String" user="dbAccess" />
+              <item name="imp" type="cbb8eebc:String" user="imp" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="handler" type="cbb8eebc:String" user="handler" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="handler" type="cbb8eebc:String" user="handler" />
+              <item name="actions" type="cbb8eebc:String" user="actions" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="handler" type="cbb8eebc:String" user="handler" />
+              <item name="actionsImp" type="cbb8eebc:String" user="actionsImp" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="response" type="cbb8eebc:String" user="response" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/misa/chatting" type="cbb8eebc:String" user="com/misa/chatting" />
+              <item name="service" type="cbb8eebc:String" user="service" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="chatservice" type="cbb8eebc:String" user="chatservice" />
+              <item name="upload" type="cbb8eebc:String" user="upload" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="chatservice" type="1abcf292:AndroidViewProjectNode" />
+              <item name="misa" type="1039202d:NonAndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,17 +616,6 @@
             <path>
               <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -401,26 +646,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="chatHandler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="apiconfig" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
@@ -431,36 +657,6 @@
               <item name="chatting" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="chat_socket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="database_config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="hazelcast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="vertx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
@@ -517,26 +713,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="chatting" type="462c0819:PsiDirectoryNode" />
               <item name="handler" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
               <item name="actionsImp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
@@ -552,122 +729,20 @@
               <item name="chatservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="hazelcast_data_manage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="sendfile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleformupload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="vertx-fileupload-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatting" type="462c0819:PsiDirectoryNode" />
-              <item name="vertx-fileupload-master" type="462c0819:PsiDirectoryNode" />
-              <item name="vertx" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -863,35 +938,34 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="142" width="1041" height="902" extended-state="0" />
-    <editor active="true" />
+    <frame x="206" y="105" width="1324" height="902" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270525" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925764" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34589502" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34589502" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24260958" sideWeight="0.4949495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34810126" sideWeight="0.48765433" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36438924" sideWeight="0.5050505" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34964323" sideWeight="0.5123457" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270525" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -941,113 +1015,11 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/Dowload/vertx-eventbus-chat-master/chat/src/main/java/com/mcnc/asyn/vertx/eventbridge/handle/chain/LoginChainHandler.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.2.1/vertx-web-3.2.1.jar!/io/vertx/ext/web/handler/sockjs/BridgeEventType.class" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/util/CustomMessageCodec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2.jar!/io/vertx/core/eventbus/EventBus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Dowload/vertx-eventbus-chat-master/chat/src/main/java/com/mcnc/asyn/vertx/spring/service/impl/RequestLogServiceImpl.java" />
-    <entry file="file://E:/Dowload/vertx-eventbus-chat-master/chat/src/main/java/com/mcnc/asyn/vertx/websocket/util/VertxHolder.java" />
-    <entry file="file://E:/Dowload/vertx-eventbus-chat-master/chat/src/main/java/com/mcnc/asyn/vertx/HttpServer.java" />
-    <entry file="file://E:/Dowload/vertx-eventbus-chat-master/chat/src/main/java/com/mcnc/asyn/vertx/websocket/util/WebSocketSessionHolder.java" />
-    <entry file="file://E:/Dowload/vertx-eventbus-chat-master/chat/src/main/java/com/mcnc/asyn/vertx/spring/SpringConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/ClusterReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/util/CustomMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/apiconfig/PlatformConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHeader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/WebServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2.jar!/io/vertx/core/Verticle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2.jar!/io/vertx/core/AbstractVerticle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Dowload/vertx-sockjs-example-master/src/main/java/io/vertx/example/web/realtime/Server.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/hazelcast/HazelcastClientFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/TextMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-727">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/service/hazelcast_data_manage/PutData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/websocket_config/ChatSocket.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/websocket_config/ChatRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/sendfile/page2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1066,15 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/sendfile/SendFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,20 +1051,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/util/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/LocalReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="68">
           <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,27 +1069,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHttpServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/api/api.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/vertx-fileupload-master/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,17 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,17 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1190,47 +1106,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendFileSingleUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/response/ErrorCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendTextSingleUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/chatHandler/ReceiveMessages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="31" selection-end-column="36" />
+        <state relative-caret-position="323">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="31" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <marker date="1511405430472" expanded="true" signature="787:2082" ph="{...}" />
+            <marker date="1511405430472" expanded="true" signature="1466:1963" ph="{...}" />
+            <marker date="1511405430472" expanded="true" signature="1468:1552" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -1238,23 +1122,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/chatHandler/codec/Messages_codec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/vertx-fileupload-master/src/main/java/com/examples/vertx/SimpleFormUploadServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/main/APILauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1262,36 +1130,313 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/chat_socket/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/messagecodec/util/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/websocket_config/ChatSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/test/sendMessage/SendFileHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/api/api.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendFileSingleUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/apiconfig/APIconfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/ChatRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/MessageDataAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/imp/UserDataAccessImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendTextSingleUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendMessageSingleUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/sendfile/SendFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/simpleformupload/SimpleFormUploadServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        <state relative-caret-position="274">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/vertx-fileupload-master/src/main/java/com/examples/vertx/SimpleFormUploadServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/misa/chatting/upload/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/chat-socket.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/TextMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/UserRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/ChatRoomTextHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dbAccess/imp/MessageDataAccessImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actions/BaseApiAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/http/impl/HttpServerRequestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="55" column="27" lean-forward="false" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/dao/SendMsgSingleUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/main/APILauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/service/hazelcast_data_manage/PutData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/chat_socket/ChatSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/response/ErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/vertx/VertxHttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="159" column="21" lean-forward="false" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/response/BaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/handler/actionsImp/SendFileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        <state relative-caret-position="68">
+          <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/misa/chatting/config/apiconfig/PlatformConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

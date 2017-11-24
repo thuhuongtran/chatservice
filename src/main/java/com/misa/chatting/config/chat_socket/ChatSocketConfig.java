@@ -12,15 +12,8 @@ import java.util.Properties;
 public class ChatSocketConfig {
     private static Logger logger = LoggerFactory.getLogger(ChatSocketConfig.class.getName());
 
-    public static String CHAT_SOCKET_CONFIG_FILE="config/chat-socket.properties";
     public static String CHAT_TEXT_MSG_ADDRESS="";
+    public final static String UPLOAD_FILE_DIRECTORY="upload/file";
 
-    public static void init() throws IOException {
-        String configFile = CHAT_SOCKET_CONFIG_FILE;
-        Properties prop = new Properties();
-        InputStream in = new FileInputStream(configFile);
-        prop.load(in);
-        CHAT_TEXT_MSG_ADDRESS = prop.getProperty("text-msg-address");
-        in.close();
-    }
+
 }

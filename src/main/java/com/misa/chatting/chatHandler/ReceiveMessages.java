@@ -2,7 +2,7 @@ package com.misa.chatting.chatHandler;
 
 import com.misa.chatting.chatHandler.codec.Messages_codec;
 import com.misa.chatting.dao.TextMsg;
-import com.misa.chatting.dao.SendTextSingleUsers;
+import com.misa.chatting.dao.SendMsgSingleUsers;
 import com.misa.chatting.main.APILauncher;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Vertx;
@@ -22,7 +22,7 @@ public class ReceiveMessages extends AbstractVerticle{
     private static Logger logger = LoggerFactory.getLogger(APILauncher.class.getName());
 
     // ChatSocket must be init firstly
-    public static void sendMsg(SendTextSingleUsers sendMsg){
+    public static void sendMsg(SendMsgSingleUsers sendMsg){
         // start eventbus
         EventBus eventBus = Vertx.vertx().eventBus();
         // register codec for TextMsg obj

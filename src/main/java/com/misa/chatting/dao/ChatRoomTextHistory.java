@@ -1,9 +1,12 @@
 package com.misa.chatting.dao;
 
-public class ChatRoomTextHistory {
+import java.io.Serializable;
+
+public class ChatRoomTextHistory implements Serializable{
+    public static final long serialVersionUID = 1L;
     private String roomID;
     private String roomName;
-    private SendTextSingleUsers text;
+    private SendMsgSingleUsers text;
     private String createAt;
 
     public String getRoomID() {
@@ -22,11 +25,11 @@ public class ChatRoomTextHistory {
         this.roomName = roomName;
     }
 
-    public SendTextSingleUsers getText() {
+    public SendMsgSingleUsers getText() {
         return text;
     }
 
-    public void setText(SendTextSingleUsers text) {
+    public void setText(SendMsgSingleUsers text) {
         this.text = text;
     }
 

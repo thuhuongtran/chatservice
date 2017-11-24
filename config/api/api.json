@@ -3,14 +3,35 @@
   "mode":"127.0.0.1",
   "api":[
     {
-      "path":"/sendMessage",
+      "path":"/sendMessage", // send text handler
       "handler":"com.misa.chatting.handler.actionsImp.SendMessageHandler",
       "isPublic":true,
       "roles":[],
       "method":"POST"
-    }
+    },
     {
-      "path":"/sendFile",
+      "path":"/sendMessage/", // send text handler
+      "handler":"com.misa.chatting.handler.actionsImp.SendMessageHandler",
+      "isPublic":true,
+      "roles":[],
+      "method":"POST"
+    },
+    {
+      "path":"/sendFile", // send file handler
+      "handler":"com.misa.chatting.handler.actionsImp.SendFileHandler",
+      "isPublic":true,
+      "roles":[],
+      "method":"POST"
+    },
+    {
+      "path":"/sendFile/", // sendFile handler for getting upload file
+      "handler":"com.misa.chatting.handler.actionsImp.SendFileHandler",
+      "isPublic":true,
+      "roles":[],
+      "method":"POST"
+    },
+    {
+      "path":"/sendFile/uploadFile", // get the form of upload file - sendFile handler
       "handler":"com.misa.chatting.handler.actionsImp.SendFileHandler",
       "isPublic":true,
       "roles":[],
